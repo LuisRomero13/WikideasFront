@@ -1,3 +1,25 @@
-.button{
+.button {
+  background: linear-gradient(to bottom, #ffffff 50%, #09AFF6 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  border: none;
+  box-shadow: 7px 7px 30px 1px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 4px solid #09AFF6;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button:hover {
+  background-position: bottom left;
 }
