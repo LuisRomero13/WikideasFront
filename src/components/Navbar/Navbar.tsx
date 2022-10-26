@@ -1,13 +1,14 @@
 import React from "react";
 import "./styles/Navbar.css";
 import { NavLink } from "react-router-dom";
+import { Logo } from "../Logo";
 export interface NavbarInterface {}
 
 const Navbar: React.FC<NavbarInterface> = () => {
   return (
     <nav className="navbar">
       <div className="div1">
-        <p>hola</p>
+        <Logo theme="light" />
       </div>
       <div className="div2">
         <ul>
