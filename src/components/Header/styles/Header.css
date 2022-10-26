@@ -1,3 +1,135 @@
-.header{
+/* #15152F */
+.header {
+  position: relative;
+  height: calc(100vh - 100px);
+  max-height: calc(100vh - 100px);
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
+}
+
+.header__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 10em;
+  margin-left: 2em;
+  max-width: 550px;
+}
+
+.header__title {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 55px;
+  color: #15152F;
+  text-transform: uppercase;
+}
+
+.header__description {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #15152F;
+}
+
+.header__search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 275px;
+  height: 50px;
+  background: #15152F;
+  /* border: 1px solid #15152F; */
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 0 1em;
+  box-shadow: 7px 7px 30px 1px rgba(0, 0, 0, 0.17);
+  gap: .5em;
+}
+
+.header__search__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.header__search__input::placeholder {
+  color: #FFFFFF;
+}
+
+.header__search__icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.header__explore {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #15152F;
+  box-shadow: 7px 7px 30px 1px rgba(0, 0, 0, 0.17);
+  color: #FFFFFF;
+}
+
+.header__explore__button {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.header__explore__icon {
+  min-width: 20px;
+  min-height: 20px;
+  cursor: pointer;
+}
+
+.header__explore__icon:hover {
+  animation: bounce .7s ease-in-out infinite alternate;
+}
+
+.header__explore__title {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
