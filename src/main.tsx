@@ -1,13 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { Home } from "./pages";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Router } from "./router";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Router>
-      <Home />
-    </Router>
+    <Router />
   </React.StrictMode>
 );
