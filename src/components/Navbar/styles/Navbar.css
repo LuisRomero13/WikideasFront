@@ -1,3 +1,38 @@
-.navbar{
+.navbar {
+  /* dark */
+  background: #15152f;
+  /* shadow */
+  box-shadow: 7px 7px 30px 1px rgba(0, 0, 0, 0.17);
+  height: 10vh;
+  width: 100%;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
 
+}
+.div1 {
+  width: 50%;
+}
+.div2 {
+  width: 50%;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  height: 100%;
+  align-items:center;
+}
+
+li {
+  font-family: "Arial";
+  font-style: normal;
+}
+.active {
+}
+
+.inactive {
+  color: #ffffff;
+  text-decoration: none;
 }
