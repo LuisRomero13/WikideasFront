@@ -7,7 +7,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
+  overflow: hidden;
 }
 
 .header__texts {
@@ -94,7 +94,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #15152F;
+  /* background: #15152F; */
   box-shadow: 7px 7px 30px 1px rgba(0, 0, 0, 0.17);
   color: #FFFFFF;
   /*   clip-path: circle(50% at 50% 100%); */
@@ -104,6 +104,17 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+}
+
+.header__explore__button::after {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  content: '';
+  width: 275px;
+  height: 200px;
+  background: #15152F;
+  left: 0;
 }
 
 .header__explore__icon {
