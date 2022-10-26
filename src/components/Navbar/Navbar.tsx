@@ -1,7 +1,7 @@
 import React from "react";
-import "./styles/Navbar.css";
 import { NavLink } from "react-router-dom";
 import { Logo } from "../Logo";
+import "./styles/Navbar.css";
 export interface NavbarInterface {}
 
 const Navbar: React.FC<NavbarInterface> = () => {
