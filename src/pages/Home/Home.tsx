@@ -7,9 +7,9 @@ export interface HomeInterface {}
 const Home: React.FC<HomeInterface> = () => {
   return (
     <div className="home">
-      <Navbar />
+      {/* <Navbar theme="light"/> */}
       <Header />
-      <div className="themes"></div>
+      <div className="themes" style={{ height: '100vh' }}></div>
     </div>
   );
 };

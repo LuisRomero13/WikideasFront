@@ -28,7 +28,7 @@ export const Router = () => {
 const Layout = () => {
   return (
     <>
-      <Navbar />
+      <Navbar theme="light" />
       <Outlet />
     </>
   );

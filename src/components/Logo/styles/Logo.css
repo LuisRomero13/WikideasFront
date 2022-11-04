@@ -13,12 +13,12 @@
   cursor: pointer;
 }
 
-.logo--light {
+.logo--dark {
   background: #FFFFFF;
   color: #15152F;
 }
 
-.logo--dark {
+.logo--light {
   background: #15152F;
   color: #FFFFFF;
   box-shadow: 7px 7px 30px 1px rgba(0, 0, 0, 0.17);

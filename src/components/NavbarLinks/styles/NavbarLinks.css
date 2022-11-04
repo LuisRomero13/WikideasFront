@@ -1,0 +1,32 @@
+/* .navbarlinks{} */
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    height: 100%;
+    align-items:center;
+  }
+  
+.navbar__link {
+    font-family: "Helvetica";
+    /* font-family: "Arial"; */
+    font-style: normal;
+    text-decoration: none;
+}
+.navbar__link--light {
+  color: #15152f;
+}
+.navbar__link--dark {
+  color: #ffffff;
+}
+
+
+.active {
+    text-decoration: none;
+    color: orange;
+}
+
+.inactive {
+    color: #15152f;
+}

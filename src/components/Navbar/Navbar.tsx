@@ -1,50 +1,28 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Logo } from "../Logo";
+import { NavbarLinks } from "../NavbarLinks";
 import "./styles/Navbar.css";
-export interface NavbarInterface {}
+export interface NavbarInterface {
+  theme: "light" | "dark";
+}
 
-const Navbar: React.FC<NavbarInterface> = () => {
+const Navbar: React.FC<NavbarInterface> = ({ theme }) => {
+  const navigate = useNavigate();
   return (
-    <nav className="navbar">
+    <nav
+      className={`navbar ${
+        theme === "light" ? "navbar--light" : "navbar--dark"
+      }`}
+    >
       <div className="div1">
-        <Logo theme="light" />
+        <Logo
+          theme={`${theme === "light" ? "light" : "dark"}`}
+          onClick={() => navigate("/")}
+        />
       </div>
       <div className="div2">
-        <ul>
-          <li>
-            <NavLink
-              className={({ isActive }) => (isActive ? "active" : "inactive")}
-              to="/buscarTemas"
-            >
-              Buscar temas
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={({ isActive }) => (isActive ? "active" : "inactive")}
-              to="/crearTema"
-            >
-              Crear un tema
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={({ isActive }) => (isActive ? "active" : "inactive")}
-              to="/debates"
-            >
-              Debates
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={({ isActive }) => (isActive ? "active" : "inactive")}
-              to="/historial"
-            >
-              Historial
-            </NavLink>
-          </li>
-        </ul>
+        <NavbarLinks theme={`${theme === "light" ? "light" : "dark"}`} />
       </div>
     </nav>
   );
