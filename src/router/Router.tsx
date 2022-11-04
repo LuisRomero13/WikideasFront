@@ -1,11 +1,17 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import { Navbar } from "../components/Navbar";
 import { Home } from "../pages";
+import { NewTheme } from "../pages/NewTheme";
 
 export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path="crearTema" element={<NewTheme />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
+        </Route>
         {/* <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="teams" element={<Teams />}>
@@ -16,5 +22,14 @@ export const Router = () => {
         </Route> */}
       </Routes>
     </BrowserRouter>
+  );
+};
+
+const Layout = () => {
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+    </>
   );
 };

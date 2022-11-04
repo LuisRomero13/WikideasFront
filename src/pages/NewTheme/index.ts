@@ -1,0 +1,1 @@
+export { default as NewTheme } from './NewTheme';
