@@ -1,19 +1,35 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../Logo";
 import { NavbarLinks } from "../NavbarLinks";
 import "./styles/Navbar.css";
-export interface NavbarInterface {
-  theme: "light" | "dark";
-}
+export interface NavbarInterface {}
 
-const Navbar: React.FC<NavbarInterface> = ({ theme }) => {
+const Navbar: React.FC<NavbarInterface> = () => {
+  const [theme, setTheme] = useState<"light" | "dark">("light");
   const navigate = useNavigate();
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+  }, []);
+
+  const handleScroll = () => {
+    if (ref.current) {
+      if (window.scrollY > 100) {
+        setTheme("dark");
+      } else {
+        setTheme("light");
+      }
+    }
+  };
   return (
     <nav
       className={`navbar ${
         theme === "light" ? "navbar--light" : "navbar--dark"
       }`}
+      ref={ref}
     >
       <div className="div1">
         <Logo
