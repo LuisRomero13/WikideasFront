@@ -17,10 +17,12 @@ const Navbar: React.FC<NavbarInterface> = () => {
 
   const handleScroll = () => {
     if (ref.current) {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 0) {
         setTheme("dark");
+        ref.current.style.zIndex = "9";
       } else {
         setTheme("light");
+        ref.current.style.zIndex = "0";
       }
     }
   };
