@@ -4,13 +4,15 @@ import "./styles/Button.css";
 
 export interface ButtonInterface {
   text: string;
+  icon?: React.ReactNode;
+  color?: "orange" | "blue" | "green" | "lightPink" | "darkPink";
 }
 
-const Button: React.FC<ButtonInterface> = ({ text }) => {
+const Button: React.FC<ButtonInterface> = ({ text, icon, color }) => {
   return (
-    <button className="button">
+    <button className={`button ${color ? `button--${color}` : ""}`}>
       {text}
-      <img src={tecIcon} alt="tec-icon" className="button__icon" />
+      {icon}
     </button>
   );
 };

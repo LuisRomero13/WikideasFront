@@ -19,7 +19,42 @@
   font-size: 18px;
   line-height: 21px;
 }
+.button--orange {
+  background: linear-gradient(to bottom, #ffffff 50%, #FE9432 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  border-bottom: 4px solid #FE9432;
+}
+
+.button--blue {
+  background: linear-gradient(to bottom, #ffffff 50%, #09AFF6 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  border-bottom: 4px solid #09AFF6;
+}
+
+.button--green {
+  background: linear-gradient(to bottom, #ffffff 50%, #51FB77 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  border-bottom: 4px solid #51FB77;
+}
+
+.button--lightPink {
+  background: linear-gradient(to bottom, #ffffff 50%, #F355F6 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  border-bottom: 4px solid #F355F6;
+}
+
+.button--darkPink {
+  background: linear-gradient(to bottom, #ffffff 50%, #F6097B 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  border-bottom: 4px solid #F6097B;
+}
 
 .button:hover {
   background-position: bottom left;
+  color: #fff;
 }
