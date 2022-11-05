@@ -6,7 +6,20 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow: hidden;
+}
+
+.header__elipseWiki {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: 1;
+}
+
+.header__elipseBottomLeft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .header__texts {
@@ -85,35 +98,23 @@
   left: 0;
   right: 0;
   width: 100%;
-  max-width: 275px;
-  border-top-left-radius: 99px;
-  border-top-right-radius: 99px;
+  max-width: 5000px;
   margin: 0 auto;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #15152F; */
-  /* box-shadow: 7px 7px 30px 1px rgba(0, 0, 0, 0.17); */
+
+  background: url("./elipse_bottom_center.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   color: #FFFFFF;
-  /*   clip-path: circle(50% at 50% 100%); */
 }
 
 .header__explore__button {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-}
-
-.header__explore__button::after {
-  position: absolute;
-  z-index: -1;
-  border-radius: 50%;
-  content: '';
-  width: 275px;
-  height: 200px;
-  background: #15152F;
-  left: 0;
 }
 
 .header__explore__icon {

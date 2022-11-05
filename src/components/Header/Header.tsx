@@ -2,6 +2,9 @@ import React from "react";
 import chevronDown from "../../assets/chevron-down.svg";
 import searchIcon from "../../assets/search-icon.svg";
 import "./styles/Header.css";
+import wikiElipse from "../../assets/wiki_elipse.svg";
+import elipseBottomLeft from "../../assets/elipse_bottom_left.svg";
+import elipseBottomCenter from "../../assets/elipse_bottom_center.svg";
 export interface HeaderInterface {}
 
 const Header: React.FC<HeaderInterface> = () => {
@@ -11,6 +14,8 @@ const Header: React.FC<HeaderInterface> = () => {
 
   return (
     <div className="header">
+      <img src={wikiElipse} className="header__elipseWiki" />
+      <img src={elipseBottomLeft} className="header__elipseBottomLeft" />
       <div className="header__texts">
         <h1 className="header__title">Wiki Ia Software</h1>
         <p className="header__description">
