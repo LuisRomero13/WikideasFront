@@ -19,8 +19,8 @@ const Header: React.FC<HeaderInterface> = () => {
       <div className="header__texts">
         <h1 className="header__title">Wiki Ia Software</h1>
         <p className="header__description">
-          Sumérjete en busca del conocimiento, la curiosidad y el debate por los
-          temas de tú interés.
+          Sumérgete en busca del conocimiento, la curiosidad y el debate por los
+          temas de tu interés.
         </p>
         <div className="header__search">
           <input

@@ -17,7 +17,7 @@ const Home: React.FC<HomeInterface> = () => {
 
         <div className="themes__container">
           <Button text="Tecnología" icon={<FaMicrochip />} color="blue" />
-          <Button text="Politica" icon={<FaBookReader />} color="orange" />
+          <Button text="Política" icon={<FaBookReader />} color="orange" />
           <Button text="Ciencia" icon={<HiBeaker />} color="green" />
           <Button text="Cine y Arte" icon={<FaVideo />} color="lightPink" />
           <Button text="Curiosidades" icon={<ImBinoculars />} color="darkPink" />

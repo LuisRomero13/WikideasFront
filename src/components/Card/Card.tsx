@@ -15,9 +15,9 @@ const Card: React.FC<CardInterface> = () => {
 		<span className="card-date">
 			10-octubre-2022
 		</span>
-        <h3 className="card-title">Titulo</h3>
+        <h3 className="card-title">Título</h3>
         <p className="card-text">
-          Descripcion breve sobre de que trata el blog que llame la atencion al
+          Descripción breve sobre de que trata el blog que llame la atención al
           usuario.
         </p>
         <Link className="link" to={``}>Ver tema <BsArrowRight/></Link>
