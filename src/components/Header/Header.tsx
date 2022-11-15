@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import chevronDown from "../../assets/chevron-down.svg";
 import searchIcon from "../../assets/search-icon.svg";
 import "./styles/Header.css";
 import wikiElipse from "../../assets/wiki_elipse.svg";
 import elipseBottomLeft from "../../assets/elipse_bottom_left.svg";
-import elipseBottomCenter from "../../assets/elipse_bottom_center.svg";
 export interface HeaderInterface {}
 
 const Header: React.FC<HeaderInterface> = () => {
+  const [searchText, setSearchText] = useState('')
+
   const handleExploreClick = () => {
     window.scrollTo(0, window.innerHeight);
   };
@@ -27,11 +28,14 @@ const Header: React.FC<HeaderInterface> = () => {
             type="text"
             placeholder="Busca un tema de tu agrado"
             className="header__search__input"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
           />
           <img
             src={searchIcon}
             alt="search-icon"
             className="header__search__icon"
+            onClick={() => console.log(searchText)}
           />
         </div>
       </div>
