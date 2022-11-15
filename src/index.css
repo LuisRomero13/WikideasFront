@@ -4,3 +4,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.tox .tox-statusbar__path  {
+  display: none !important;
+}
