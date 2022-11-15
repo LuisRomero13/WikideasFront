@@ -82,7 +82,7 @@
 }
 
 .header__search__input::placeholder {
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, .7);
 }
 
 .header__search__icon {
@@ -105,7 +105,7 @@
   justify-content: center;
   align-items: center;
 
-  background: url("./elipse_bottom_center.svg");
+  background: url("/elipse_bottom_center.svg");
   background-position: center;
   background-repeat: no-repeat;
   color: #FFFFFF;
