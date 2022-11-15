@@ -4,7 +4,7 @@ import { Editor } from "@tinymce/tinymce-react";
 export interface NewThemeInterface {}
 
 const NewTheme: React.FC<NewThemeInterface> = () => {
-  const submitHandler = (e) => {};
+  const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {};
   const editorRef = useRef(null);
   return (
     <div className="newtheme">
