@@ -57,8 +57,7 @@ const NewTheme: React.FC<NewThemeInterface> = () => {
             <Editor
               apiKey="bwpwtl3ji8ktvhywiu3rafc8sk7exeaj6axiww1b0fvyjlim"
               onInit={(evt, editor) => (editorRef.current = editor as any)}
-              initialValue={content}
-              value={content}
+              initialValue=''
               onChange={(e) => setContent(e.target.getContent())}
               init={{
                 height: 400,
